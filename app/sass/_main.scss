@@ -1,0 +1,137 @@
+main {
+  position: relative;
+  width: 100vw;
+  height: auto;
+  background-color: $VeryLightGray;
+  text-align: center;
+  padding: 6.4% 11.3% 5.42%;
+  @media (max-width: 376px) {
+    padding: 24.5% 8% 20.5%;
+  }
+
+  .text {
+    .service {
+      font-size: 2.78vw;
+      font-weight: 200;
+      color: $GrayishBlue;
+      @media (max-width: 376px) {
+        font-size: 6.9vw;
+      }
+    }
+
+    .company {
+      font-size: 2.78vw;
+      font-weight: 600;
+      margin-bottom: 1.74%;
+      @media (max-width: 376px) {
+        font-size: 6.9vw;
+        margin-bottom: 5.9%;
+      }
+    }
+
+    .para {
+      width: 55%;
+      font-size: 1.17vw;
+      font-weight: 400;
+      color: $GrayishBlue;
+      margin-bottom: 5.85%;
+      margin-left: auto;
+      margin-right: auto;
+      @media (max-width: 376px) {
+        width: 100%;
+        font-size: 4vw;
+        margin-bottom: 24.51%;
+      }
+    }
+  }
+
+  .cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media (max-width: 376px) {
+      flex-direction: column;
+    }
+    .group-card {
+      margin: 0 3%;
+      .special{
+        margin-bottom: 0;
+        @media (max-width: 376px) {
+          margin-bottom: 29px;
+        }
+      }
+    }
+
+    
+    .card {
+      position: relative;
+      width: 21.7vw;
+      height: 17vw;
+      padding: 33px;
+      margin-bottom: 29px;
+      background-color: white;
+      border-radius: 5px;
+      box-shadow: 2px 15px 10px rgba($color: $Blue, $alpha: 0.1);
+      text-align: left;
+      @media (max-width: 376px) {
+        width: 84vw;
+        height: 67vw;
+        padding: 28px;
+        margin-bottom: 26px;
+      }
+
+      > h3 {
+        font-size: 1.25vw;
+        font-weight: 600;
+        margin-bottom: 4.1%;
+        @media (max-width: 376px) {
+          font-size: 5.87vw;
+          margin-bottom: 5%;
+        }
+      }
+
+      > p {
+        font-size: 0.84vw;
+        font-weight: 400;
+        color: $GrayishBlue;
+        @media (max-width: 376px) {
+          font-size: 3.14vw;
+        }
+      }
+
+      > img {
+        position: absolute;
+        bottom: 13.6%;
+        right: 10.6%;
+        width: 20%;
+        @media (max-width: 376px) {
+          bottom: 11%;
+          right: 9%;
+          width: 18.4%;
+        }
+      }
+      
+      &-line {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 5px;
+        border-radius: 5px 5px 0 0;
+      }
+
+      &-line1 {
+        background-color: $Cyan;
+      }
+      &-line2 {
+        background-color: $Red;
+      }
+      &-line3 {
+        background-color: $Orange;
+      }
+      &-line4 {
+        background-color: $Blue;
+      }
+    }
+  }
+}
